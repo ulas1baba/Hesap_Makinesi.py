@@ -1,0 +1,47 @@
+işlem="""Giriş yapmak için işlem seçiniz...
+(1) Toplama
+(2) Çıkarma
+(3) Çarpma
+(4) Bölme
+(5) Karekök Alma
+(6) Yüzde Alma
+Çıkmak için Q' ya basmanız yeterlidir..."""
+yanlış_giriş="Yanlış tuşa bastınız. Lütfen tekrar deneyin..."
+while True:
+    print(işlem)
+    user=input("İşlem No: ")
+    if user.lower=="q":
+        print("Çıkılıyor...")
+        break
+    elif user=="1":
+        veri_1=input("İlk sayı: ")
+        veri_2=input("İkinci sayı: ")
+        sonuç=int(veri_1)+int(veri_2)
+        print(sonuç)
+    elif user=="2":
+        veri_1=input("İlk sayı: ")
+        veri_2=input("İkinci sayı: ")
+        sonuç=int(veri_1)-int(veri_2)
+        print(sonuç)
+    elif user=="3":
+        veri_1=input("İlk sayı: ")
+        veri_2=input("İkinci sayı: ")
+        sonuç=int(veri_1)*int(veri_2)
+        print(sonuç)
+    elif user=="4":
+        veri_1=input("Bölünen sayı: ")
+        veri_2=input("Bölen sayı: ")
+        sonuç=int(veri_1)/int(veri_2)
+        print(sonuç)
+    elif user=="5":
+        veri=input("Sayı: ")
+        sonuç=int(veri)**2
+        print(sonuç)
+    elif user=="6":
+        
+        veri_1=input("Sayı: ")
+        veri_2=input("Yüzde kaçı: ")
+        sonuç=int(veri_1)*int(veri_2)/100
+        print(sonuç)
+    else:
+        print(yanlış_giriş)
